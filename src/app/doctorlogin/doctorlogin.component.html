@@ -1,0 +1,50 @@
+<div class="last_doct">
+<div>
+   <img class="doctor_img"  src="assets/img/doctor.jpg" alt="doctor image">
+</div>
+
+
+
+
+<div class="doctor_outer" [ngStyle]="{'display':block_hider?'block':'none'}">
+<h5 class="doctor_login">Doctor Login</h5>
+<div class="login-container">
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <label>Enter Email ID
+      <input
+        type="text"
+        class="login-input"
+        formControlName="email"
+      />
+    </label>
+    <label>Enter Password
+      <input
+        type="text"
+        class="login-input"
+        formControlName="password"
+      />
+    </label>
+    <button class="login-button">Login</button><br/><br/>
+  </form>
+</div>
+</div>
+
+<div class="doctor_outer" [ngStyle]="{'display':block_hider?'none':'block'}">
+  <h5 class="doctor_login">Enter the Verfication PIN</h5>
+  <div class="login-container">
+    <form (ngSubmit)="pinchecker()">
+      <label>Enter the PIN
+        <input
+          type="text"
+          class="login-input"
+          [(ngModel)]="formnew.pin"
+          name="pin"
+        />
+      </label>
+     
+      <button class="login-button">Login</button><br/><br/>
+    </form>
+  </div>
+  </div>
+
+</div>

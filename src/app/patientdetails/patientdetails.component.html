@@ -1,0 +1,16 @@
+
+<div class="doctor_list" *ngFor="let doc of patient">
+    <h5>PatientId</h5>
+    <p>{{ doc.patientid }}</p>
+    <h5>Name</h5>
+    <p>{{ doc.name }}</p>
+    <h5>Email</h5>
+    <p>{{ doc.email }}</p>
+    <h5>Phone Number</h5>
+    <p>{{ doc.number }}</p>
+    <h5>Doctor Names</h5>
+    <div class="doctor_names" *ngFor="let doc1 of doc.DoctorNames">
+        <p>{{ doc1.doctorname }}</p>
+        <p>{{doc1.purpose}}</p>
+    </div>
+</div>

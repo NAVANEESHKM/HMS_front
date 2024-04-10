@@ -1,0 +1,120 @@
+/* .patient {
+    text-align: center;
+    margin: 3%;
+    background-color: antiquewhite;
+
+} */
+
+
+.doctor_pageouter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left_doc {
+    padding: 2% 15%;
+    margin: 5%;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.right_doc {
+    padding: 2% 8%;
+    margin: 5%;
+    border-radius: 5%;
+    border-radius: 10%;
+
+    font-weight: bold;
+
+}
+
+.doctor_date {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_doc1 {
+    padding: 2% 0%;
+
+    margin: 5%;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.right_doc1 {
+    padding: 2% 5%;
+    margin: 5%;
+    border-radius: 5%;
+    border-radius: 10%;
+
+    font-weight: bold;
+    background-color: rgb(79, 163, 79);
+
+}
+
+.right_doc1:hover {
+    background-color: rgb(27, 82, 27);
+    color: white;
+
+}
+
+/* Container for patients */
+.patients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual patient card */
+.patient {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: calc(100% - 20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for patient card */
+.patient:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+.patient h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333333;
+}
+
+/* Details */
+.patient p {
+    margin: 5px 0;
+    color: #666666;
+}
+
+/* View more link */
+.patient a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for view more link */
+.patient a:hover {
+    color: #0056b3;
+}
+
+.invite {
+    padding: 2% 5%;
+    border-radius: 5%;
+    border-radius: 10%;
+
+    font-weight: bold;
+    background-color: rgb(79, 163, 79);
+}

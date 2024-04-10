@@ -1,0 +1,68 @@
+
+.prescription {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Add some spacing between input and todo items */
+}
+
+.prescription input {
+    padding: 10px;
+    margin-top: 10px; /* Add more spacing at the top */
+    border: 2px solid lightgreen; /* Update border style */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Increase font size */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s ease; /* Add transition for border color */
+}
+
+.prescription input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+.prescription input::placeholder {
+    color: #999; /* Change placeholder color */
+}
+
+.todo_pres {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.todo_span {
+    background-color: rgb(215, 243, 215);
+    margin-top: 1%;
+    padding: 0.5% 10%;
+}
+
+
+.button_pres {
+    position: fixed;
+    bottom: 20px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10%;
+
+}
+
+.button_pres button {
+    background-color: rgb(99, 182, 99);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button_pres button:hover {
+    background-color: rgb(78, 139, 78);
+}
+
+.title_pres{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1%;
+}

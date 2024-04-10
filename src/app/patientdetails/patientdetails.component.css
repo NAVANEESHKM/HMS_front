@@ -1,0 +1,48 @@
+/* Styles for the container of all patients */
+.doctor_list {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the headings of patient details */
+.doctor_list h5 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Styles for the patient details */
+.doctor_list p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+/* Styles for alternating background color */
+.doctor_list:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Styles for doctor names container */
+.doctor_names {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #007bff;
+}
+
+/* Styles for doctor name */
+.doctor_names p {
+    margin: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover effect for doctor list */
+.doctor_list:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}

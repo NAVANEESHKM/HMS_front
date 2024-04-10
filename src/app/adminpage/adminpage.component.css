@@ -1,0 +1,33 @@
+.admin_menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 5%;
+}
+
+.admin_menu a {
+
+    background-color: lightgreen;
+    padding: 1%;
+    border-radius: 10%;
+    text-decoration: none;
+    margin: 2%;
+}
+
+/* .admin_menu a:hover {
+    padding: 11%;
+    transition: padding 0.5s;
+} */
+
+.admin_main {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./admin_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

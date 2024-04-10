@@ -1,0 +1,42 @@
+<div class="doctor_pageouter">
+
+    <div class="doctor_per">
+        <button class="left_doc" type="button" [ngStyle]="{'background-color':color_check?'green':'white'}"
+            (click)="statusupdate(); ">Available</button>
+        <button class="right_doc" type="button" [ngStyle]="{'background-color':color_check?'white':'red'}"
+            (click)="statusupdate(); ">Unavailable</button>
+    </div>
+
+
+    <div class="doctor_date">
+        <input class="left_doc1" type="date" [(ngModel)]="data_getting">
+        <button class="right_doc1" type="data">Get Data</button>
+    </div>
+
+</div>
+
+<div class="patients-container">
+    <div *ngFor="let pat of patients; let i = index;">
+        <div *ngIf="isToday(pat.date)" class="patient">
+            <h4>Patient ID</h4>
+            <p>{{ pat.patientid }}</p>
+
+            <h4>Name</h4>
+            <p>{{ pat.name }}</p>
+            <h4>Email</h4>
+            <p>{{ pat.email }}</p>
+            <h4>Purpose</h4>
+            <p>{{ pat.purpose }}</p>
+            <h4>Doctor</h4>
+            <p>{{ pat.doctor }}</p>
+            <h4>Number</h4>
+            <p>{{ pat.number }}</p>
+            <h4>Date</h4>
+            <p>{{ pat.date }}</p>
+            <h4>Time</h4>
+            <p>{{ pat.time }}</p>
+            <button class="invite" (click)="SendMail(i)">Accept Request</button><br>
+            <a (click)="navigateToDetailsPatient(i)" routerLink="detailspatient">View More</a><br>
+            <a (click)="currentdetails(i)" routerLink="addprescription">Add Prescription</a>
+
+        </div>

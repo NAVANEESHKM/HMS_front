@@ -1,0 +1,13 @@
+<div class="doctor-list" *ngFor="let doc of doctor">
+  <div class="doctor-card">
+    <img class="doctor-image" [src]="doc.image" alt="Doctor Image">
+    <div class="doctor-details">
+      <h5 class="doctor-heading">Name</h5>
+      <p class="doctor-info">{{ doc.name }}</p>
+      <h5 class="doctor-heading">Qualification</h5>
+      <p class="doctor-info">{{ doc.qualification }}</p>
+      <h5 class="doctor-heading">Specialist</h5>
+      <p class="doctor-info">{{ doc.specialist }}</p>
+    </div>
+  </div>
+</div>

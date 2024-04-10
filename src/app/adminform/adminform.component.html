@@ -1,0 +1,27 @@
+<div class="doctor_adder">
+    <div class="doctor_inner">
+<h5 class="adminformtitle">Create Doctor</h5>
+
+<form (ngSubmit)="doctorInfo()" >
+    <div class="popup" [ngStyle]="{'visibility': popup ? 'visible' : 'hidden'}">
+        <div class="popup-content">
+            <p>Doctor {{form.name}} Created Successfully</p>
+        </div>
+    </div>
+    <p>Name</p>
+    <input type="text" [(ngModel)]="form.name" name="name"/>
+    <p>EmailID</p>
+    <input type="text" [(ngModel)]="form.emailid" name="emailid"/>
+    <p>Phone Number</p>
+    <input type="text" [(ngModel)]="form.phone" name="emailid"/>
+    <p>Qualification</p>
+    <input type="text" [(ngModel)]="form.qualification" name="qualification"/>
+    <p>Specialist</p>
+    <input type="text" [(ngModel)]="form.specialist" name="specialist"/>
+    <p>Add Image</p>
+    <input type="file" class="image_doc" (change)="onFileSelected($event)" />
+    <br/>
+    <button (click)="popchange()"  type="submit">Add Doctor</button>
+</form>
+</div>
+</div>

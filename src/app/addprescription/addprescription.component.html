@@ -1,0 +1,17 @@
+<div class="outer_pres">
+   
+    <div class="title_pres">Adding Prescription For {{PatientName}} </div>
+<div class="prescription">
+    <input type="text" placeholder="Add here..." [(ngModel)]="prescriptionInput" (keyup.enter)="addPrescription()" />
+</div>
+
+
+<div class="todo_pres" *ngFor="let val of prescription">
+         <div class="todo_span">{{val}}</div>
+</div>
+
+<div class="button_pres">
+    <button (click)="AddPrecaution()">Send Prescription</button>
+</div>
+
+</div>

@@ -1,0 +1,20 @@
+
+  <div *ngFor="let val of Medicine" class="product">
+    <div class="image-box">
+      <div class="images" >
+        
+      </div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">{{val.medicinename}}</h2>
+      <h2 class="price">₹{{val.price}}</h2>
+      <h2 class="price">alert {{val.age}}</h2>
+      <p class="description">{{val.description}}</p>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button" (click)="AddLocal(val.medicinename,val.price,val.age,val.description)">Add to Cart</button>
+    </div>
+  </div>
+  <div class="view_cart">
+   <button routerLink="cart">View Cart</button>
+   </div>
